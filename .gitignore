@@ -1,0 +1,21 @@
+# 编译构建目录
+build/
+cmake-build-*/
+out/
+
+# vim 临时交换文件
+*.swp
+*.swo
+*~
+
+# 日志文件
+*.log
+
+# 可执行文件（测试程序）
+tests/test_*
+!tests/test_*.c
+
+# 交叉编译、工具链产物
+*.o
+*.a
+*.so
