@@ -14,6 +14,8 @@ set(LIB_SRC
     src/log_module.c
     src/thread_wrapper.c
     src/mutex_cond.c  
+    src/block_ringbuf.c
+    src/tcp_client.c    
 )
 
 # 编译成静态库 libembedded_comp.a
@@ -42,3 +44,10 @@ target_link_libraries(test_thread_wrapper embedded_comp)
 #
 add_executable(test_mutex_cond tests/test_mutex_cond.c)
 target_link_libraries(test_mutex_cond embedded_comp)
+
+add_executable(test_block_ringbuf tests/test_block_ringbuf.c)
+target_link_libraries(test_block_ringbuf embedded_comp)
+
+
+add_executable(test_tcp_client tests/test_tcp_client.c)
+target_link_libraries(test_tcp_client embedded_comp)
