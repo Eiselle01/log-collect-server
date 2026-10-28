@@ -19,3 +19,9 @@ tests/test_*
 *.o
 *.a
 *.so
+
+# IDE 临时文件
+.vscode/
+.idea/
+*.swp
+*.swo
